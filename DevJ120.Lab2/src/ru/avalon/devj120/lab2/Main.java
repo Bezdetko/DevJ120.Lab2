@@ -29,6 +29,8 @@ public class Main {
         }
 
         System.out.println("Набор символов строки с индексом 1 оригинального массива: " + Arrays.toString(StringService.getCharStat(strings[1])));
+        System.out.println("Метод StringService.getCharStat() с пустой ссылкой на строку: " + Arrays.toString(StringService.getCharStat(null)));
+        System.out.println("Метод StringService.getCharStat() с исходной пустой строкой: " + Arrays.toString(StringService.getCharStat("")));
 
 }
     }

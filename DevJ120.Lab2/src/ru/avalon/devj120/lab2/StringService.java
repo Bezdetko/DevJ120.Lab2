@@ -22,8 +22,10 @@ public class StringService {
 }
     
     public static char[] getCharStat(String str) {
-        if (str==null || str.isEmpty()) 
-            return null;
+        if (str==null)
+           return null;
+        if (str.isEmpty())
+            return new char[0];
         else {
         char[] charStr =str.toCharArray();
         String allChars = new String();
